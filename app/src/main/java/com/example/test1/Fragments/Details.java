@@ -1,28 +1,17 @@
 package com.example.test1.Fragments;
 
-import android.net.Uri;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.VideoView;
 
-/*import com.google.android.youtube.player.YouTubeInitializationResult;
-import com.google.android.youtube.player.YouTubePlayer;
-import com.google.android.youtube.player.YouTubePlayerView;*/
+import androidx.fragment.app.Fragment;
 
 import com.example.test1.Classes.Exercises;
 import com.example.test1.Classes.FirebaseServices;
 import com.example.test1.R;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.ValueEventListener;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -104,8 +93,8 @@ public class Details extends Fragment {
         Hearme();
     }
 
-  /*  private void playVideo() {
-        YouTubePlayerView youtubePlayerView = getView().findViewById(R.id.videoView);
+    private void playVideo() {
+       /* YouTubePlayerView youtubePlayerView = getView().findViewById(R.id.videoView);
         String youtubeLink = exercises.getLinkVideo(); // Replace "YOUR_YOUTUBE_VIDEO_LINK" with the actual YouTube video link retrieved from Firebase
 
         youtubePlayerView.initialize(AIzaSyBhO7Y9VE4ZuYfOe7IZkgl0TL6tRirTkww, new YouTubePlayer.OnInitializedListener() {
@@ -120,15 +109,15 @@ public class Details extends Fragment {
             public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
                 // Handle any errors that occurred while initializing the YouTube player
             }
-        });
-    }*/
+        });*/
+    }
 
     private void Hearme() {
         name.setText(exercises.getName());
         warning.setText(exercises.getWarning());
         description.setText(exercises.getDescription());
         instruction.setText(exercises.getInstruction());
-     //   playVideo();
+        playVideo();
     }
 
 }

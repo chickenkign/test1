@@ -23,6 +23,16 @@
             app:layout_constraintStart_toEndOf="@+id/imageView4"
             app:layout_constraintTop_toTopOf="parent" />
 
+
+
+          /*  <com.google.android.youtube.player.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ytPlayer"
+                app:layout_constraintTop_toTopOf="parent"/>*/
+
+
+
         <VideoView
             android:id="@+id/videoView"
             android:layout_width="0dp"

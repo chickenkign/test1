@@ -1,9 +1,9 @@
 package com.example.test1.Activities;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
-
-import android.os.Bundle;
 
 import com.example.test1.Classes.FirebaseServices;
 import com.example.test1.Data.FragExercises;

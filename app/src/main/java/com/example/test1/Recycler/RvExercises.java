@@ -3,8 +3,12 @@ package com.example.test1.Recycler;
 import static android.content.ContentValues.TAG;
 
 import android.app.ProgressDialog;
-import android.media.session.MediaSessionManager;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -12,16 +16,9 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
-
-import com.example.test1.Classes.Exercises;
 import com.example.test1.Adapters.MyAdapter;
+import com.example.test1.Classes.Exercises;
 import com.example.test1.Fragments.LoginFragment;
-import com.example.test1.Fragments.RestPassword;
 import com.example.test1.R;
 import com.google.firebase.firestore.DocumentChange;
 import com.google.firebase.firestore.EventListener;
@@ -144,7 +141,7 @@ public class RvExercises extends Fragment {
                 . addSnapshotListener(new EventListener<QuerySnapshot>() {
                     @Override
                     public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
-                        if (error != null) {
+                                            if (error != null) {
                             progressDialog.dismiss(); // Dismiss the progressDialog in case of an error
                             Log.e("firestore error!", error.getMessage());
                             return;
