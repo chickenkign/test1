@@ -26,7 +26,10 @@ public class MainActivity extends AppCompatActivity {
             ft.commit();
         }
         else {
-            LOGIN();
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.FramlayoutMain, new ListExe());
+            ft.commit();
+
         }
     }
 
