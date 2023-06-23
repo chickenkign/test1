@@ -12,9 +12,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.VideoView;
 
-import com.google.android.youtube.player.YouTubeInitializationResult;
+/*import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
-import com.google.android.youtube.player.YouTubePlayerView;
+import com.google.android.youtube.player.YouTubePlayerView;*/
 
 import com.example.test1.Classes.Exercises;
 import com.example.test1.Classes.FirebaseServices;
@@ -104,7 +104,7 @@ public class Details extends Fragment {
         Hearme();
     }
 
-    private void playVideo() {
+  /*  private void playVideo() {
         YouTubePlayerView youtubePlayerView = getView().findViewById(R.id.videoView);
         String youtubeLink = exercises.getLinkVideo(); // Replace "YOUR_YOUTUBE_VIDEO_LINK" with the actual YouTube video link retrieved from Firebase
 
@@ -121,14 +121,14 @@ public class Details extends Fragment {
                 // Handle any errors that occurred while initializing the YouTube player
             }
         });
-    }
+    }*/
 
     private void Hearme() {
         name.setText(exercises.getName());
         warning.setText(exercises.getWarning());
         description.setText(exercises.getDescription());
         instruction.setText(exercises.getInstruction());
-        playVideo();
+     //   playVideo();
     }
 
 }
