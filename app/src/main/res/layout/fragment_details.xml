@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Details">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvAboutD"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="174dp"
+            android:layout_marginBottom="280dp"
+            android:text="ABOUT"
+            app:layout_constraintBottom_toTopOf="@+id/tvNameD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="19dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvNameD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/tvNameD"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="379dp"
+            android:text="NAME"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAboutD" />
+
+        <TextView
+            android:id="@+id/tvDescriptionD"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="2dp"
+            android:text="description"
+            app:layout_constraintBottom_toTopOf="@+id/tvInstructionD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNameD" />
+
+        <TextView
+            android:id="@+id/tvInstructionD"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="36dp"
+            android:text="instruction"
+            app:layout_constraintBottom_toTopOf="@+id/tvWarningD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescriptionD" />
+
+        <TextView
+            android:id="@+id/tvWarningD"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="41dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginBottom="84dp"
+            android:text="warning"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvInstructionD" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="62dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginBottom="19dp"
+            android:src="@drawable/arrow"
+            app:layout_constraintBottom_toTopOf="@+id/videoView"
+            app:layout_constraintEnd_toStartOf="@+id/tvAboutD"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

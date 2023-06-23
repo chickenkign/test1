@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Data.FragExercises">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etNameExe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="128dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="396dp"
+            android:ems="10"
+            android:hint="Name..."
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/btnAddExe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etAboutExe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="About..."
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/etDescriptionExe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etVideoview" />
+
+        <EditText
+            android:id="@+id/etDescriptionExe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:ems="10"
+            android:hint="Description..."
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/etInstructionExe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etAboutExe" />
+
+        <EditText
+            android:id="@+id/etInstructionExe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="12dp"
+            android:ems="10"
+            android:hint="Instruction..."
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/etWarningExe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etDescriptionExe" />
+
+        <EditText
+            android:id="@+id/etWarningExe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:ems="10"
+            android:hint="Warning..."
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/btnAddExe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etInstructionExe" />
+
+        <Button
+            android:id="@+id/btnAddExe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="67dp"
+            android:text="add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNameExe" />
+
+        <EditText
+            android:id="@+id/etVideoview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="19dp"
+            android:ems="10"
+            android:hint="LinkVideo..."
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/etAboutExe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivImage" />
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="76dp"
+            android:src="@drawable/image"
+            app:layout_constraintBottom_toTopOf="@+id/etVideoview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
